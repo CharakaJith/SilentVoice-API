@@ -27,6 +27,7 @@ app.use(cors());                        // use middleware to allow cross origins
 app.use(express.json());                // grants permission to access request body
 
 app.use("/api", router);                // set routing path    
+app.use("/test", test);
 
 //set up port
 app.listen(PORT, () => {
